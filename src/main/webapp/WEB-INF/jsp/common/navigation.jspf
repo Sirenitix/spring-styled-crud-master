@@ -1,0 +1,71 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<style>
+	header img {
+		height: 35px;
+		margin-left: 40px;
+	}
+	body {
+		height: 125vh;
+		background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+		background-size: cover;
+		font-family: sans-serif;
+		margin-top: 80px;
+		padding: 30px;
+	}
+
+	main {
+		color: white;
+	}
+
+	header {
+		background-color: white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 0 25px 0 black;
+	}
+
+	header * {
+		display: inline;
+	}
+
+	header li {
+		margin: 20px;
+	}
+
+	header li a {
+		color: black;
+		text-decoration: none;
+	}
+
+</style>
+<nav role="navigation" >
+<%--&lt;%&ndash;	<div class="">&ndash;%&gt;--%>
+<%--&lt;%&ndash;		<a href="https://github.com/Sirenitix" class="navbar-brand">My page</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;	</div>&ndash;%&gt;--%>
+<%--	<div style="background-color: white" class="navbar-collapse">--%>
+<%--		--%>
+<%--	</div>--%>
+
+	<header>
+		<img src="https://www.aristoteliansociety.org.uk/wp-content/uploads/2013/03/AS-Logo.jpg">
+		<nav>
+			<ul class="nav navbar-nav">
+				<li><a href="/list-todos">Клиенты</a></li>
+				<sec:authorize access="hasRole('ADMIN')">
+					<li ><a href="/new-user">Добавить пользователя</a></li>
+					<li ><a href="/user-credentials">Данные пользователей</a></li>
+				</sec:authorize>
+				<li ><a href="/about">О компании</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/logout">Выход</a></li>
+			</ul>
+		</nav>
+	</header>
+</nav>
