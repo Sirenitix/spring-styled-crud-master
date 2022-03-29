@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23c37d5d-bd49-4f21-be1a-04649234f9f3" name="Changes" comment="v_1.2">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lang/messages_kz.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/lang/messages_ru.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="23c37d5d-bd49-4f21-be1a-04649234f9f3" name="Changes" comment="v_1.3">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/security/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/security/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/navigation.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/details.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list-todos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list-todos.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/new-user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/new-user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/todo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/todo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user-cred.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user-cred.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/database/database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/database/database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/security/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/security/DbConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lang/messages_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lang/messages.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +91,7 @@
       <workItem from="1648482309406" duration="32000" />
       <workItem from="1648482531266" duration="1123000" />
       <workItem from="1648531983888" duration="574000" />
-      <workItem from="1648558531027" duration="7380000" />
+      <workItem from="1648558531027" duration="8317000" />
     </task>
     <task id="LOCAL-00001" summary="v_1.2">
       <created>1648482330841</created>
@@ -107,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648482330841</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v_1.3">
+      <created>1648566013083</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648566013083</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +127,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v_1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v_1.2" />
+    <MESSAGE value="v_1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="v_1.3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
