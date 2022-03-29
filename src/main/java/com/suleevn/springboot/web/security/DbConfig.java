@@ -21,8 +21,8 @@ public class DbConfig  {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
         driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/clients");
-        driverManagerDataSource.setUsername("root");
-        driverManagerDataSource.setPassword("root");
+        driverManagerDataSource.setUsername("admin");
+        driverManagerDataSource.setPassword("12345678");
         return driverManagerDataSource;
     }
 }

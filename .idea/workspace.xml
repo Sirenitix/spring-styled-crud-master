@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23c37d5d-bd49-4f21-be1a-04649234f9f3" name="Changes" comment="v_1.3.1">
+    <list default="true" id="23c37d5d-bd49-4f21-be1a-04649234f9f3" name="Changes" comment="v_1.3.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/database/database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/database/database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/security/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/suleevn/springboot/web/security/DbConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <workItem from="1648482531266" duration="1123000" />
       <workItem from="1648531983888" duration="574000" />
       <workItem from="1648558531027" duration="8567000" />
-      <workItem from="1648568142876" duration="644000" />
+      <workItem from="1648568142876" duration="1028000" />
     </task>
     <task id="LOCAL-00001" summary="v_1.2">
       <created>1648482330841</created>
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648567171085</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v_1.3.2">
+      <created>1648568834138</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648568834138</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +142,8 @@
     <MESSAGE value="v_1.2" />
     <MESSAGE value="v_1.3" />
     <MESSAGE value="v_1.3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v_1.3.1" />
+    <MESSAGE value="v_1.3.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v_1.3.2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
