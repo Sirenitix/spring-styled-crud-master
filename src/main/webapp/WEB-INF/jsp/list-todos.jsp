@@ -25,8 +25,8 @@
 		table{
 			position: relative;
 			z-index: 2;
-			left: -2%;
-			top: 50%;
+			left: -15%;
+			top: 15%;
 			/*transform: translate(-50%,-50%);*/
 			width: 105.8%;
 			border-collapse: collapse;
@@ -41,6 +41,11 @@
 			text-align: center;
 
 
+		}
+		td{
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
 		}
 		th{
 			background-color: rgba(115, 6, 157, 0.79);
@@ -60,11 +65,9 @@
 		}
 
 
-
-
 		.searchBox {
 			position: relative;
-			top: 13%;
+			top: 5%;
 			left: 50%;
 			transform:  translate(-50%,50%);
 			background: rgba(115, 6, 157, 0.73);
@@ -196,6 +199,8 @@
 			100% { background-position: 0 0; }
 		}
 
+
+
 	</style>
 
 
@@ -267,17 +272,17 @@
 
 		<br>
 
-		<table id="myTable">
+		<table id="myTable" style="width:130%; table-layout: fixed;">
 			<thead>
 				<tr>
-					<th onclick="sortTable(0)">ФИО</th>
-					<th onclick="sortNunberTable(1)">ИИН</th>
-					<th onclick="sortNunberTable(2)">Пасспорт</th>
-					<th onclick="sortTable(3)">Дата</th>
-					<th onclick="sortTable(4)">Скидка</th>
-					<th onclick="sortTable(5)">Адрес</th>
-					<th onclick="sortNunberTable(6)">Номер</th>
-					<th onclick="sortTable(7)">Реквизиты</th>
+					<th onclick="sortTable(0)"><spring:message code="lang.fio" text="" /></th>
+					<th onclick="sortNunberTable(1)"><spring:message code="lang.iin" text="" /></th>
+					<th onclick="sortNunberTable(2)"><spring:message code="lang.passport" text="" /></th>
+					<th onclick="sortTable(3)"><spring:message code="lang.date" text="" /></th>
+					<th onclick="sortTable(4)"><spring:message code="lang.discount" text="" /></th>
+					<th onclick="sortTable(5)"><spring:message code="lang.address" text="" /></th>
+					<th onclick="sortNunberTable(6)"><spring:message code="lang.phone" text="" /></th>
+					<th onclick="sortTable(7)"><spring:message code="lang.req" text="" /></th>
 					<th></th>
 					<th></th>
 					<th></th>
@@ -294,12 +299,12 @@
 						<td>${todo.address}</td>
 						<td>${todo.phoneNumber}</td>
 						<td>${todo.prop}</td>
-						<td><a type="button" class="btn btn-info glow-on-hover"
-							href="/update-todo?id=${todo.id}">Изменить</a></td>
-						<td><a type="button" class="btn btn-success glow-on-hover"
-							   href="/show-todo?id=${todo.id}">Детали</a></td>
-						<td><a type="button" class="btn btn-danger glow-on-hover"
-							href="/delete-todo?id=${todo.id}">Удалить</a></td>
+						<td style="color:white"><a type="button" class="btn btn-info glow-on-hover"
+							href="/update-todo?id=${todo.id}"><spring:message code="lang.change" text="" /></a></td>
+						<td style="color:white"><a type="button" class="btn btn-success glow-on-hover"
+							   href="/show-todo?id=${todo.id}"><spring:message code="lang.details" text="" /></a></td>
+						<td style="color:white"><a type="button" class="btn btn-danger glow-on-hover"
+							href="/delete-todo?id=${todo.id}"><spring:message code="lang.delete" text="" /></a></td>
 					</tr>
 				</c:forEach>
 

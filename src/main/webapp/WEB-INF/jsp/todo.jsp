@@ -67,70 +67,70 @@
 		<form:hidden path="id" />
 		
 		<fieldset class="form-group">
-			<form:label path="fullName" style="color:white">ФИО</form:label>
+			<form:label path="fullName" style="color:black"><spring:message code="lang.fio" text="" /></form:label>
 			<form:input path="fullName" type="text" class="form-control"
 				required="required" />
 			<form:errors path="fullName" cssClass="text-warning" />
 		</fieldset>
 
 		<fieldset class="form-group">
-			<form:label path="iin" style="color:white">ИИН</form:label>
+			<form:label path="iin" style="color:black"><spring:message code="lang.iin" text="" /></form:label>
 			<form:input path="iin" type="number" class="form-control"
 						required="required" />
 			<form:errors path="iin" cssClass="text-warning" />
 		</fieldset>
 
 		<fieldset class="form-group">
-			<form:label path="passport" style="color:white">Пасспорт</form:label>
+			<form:label path="passport" style="color:black"><spring:message code="lang.passport" text="" /></form:label>
 			<form:input path="passport" type="number" class="form-control"
 						required="required" />
 			<form:errors path="passport" cssClass="text-warning" />
 		</fieldset>
 
 		<fieldset class="form-group">
-			<form:label path="date" style="color:white">Дата</form:label>
+			<form:label path="date" style="color:black"><spring:message code="lang.date" text="" /></form:label>
 			<form:input path="date" type="date" class="form-control"
 						required="required" />
 			<form:errors path="date" cssClass="text-warning" />
 		</fieldset>
 
 		<fieldset class="form-group">
-			<form:label path="disc" style="color:white">Скидка</form:label>
+			<form:label path="disc" style="color:black"><spring:message code="lang.discount" text="" /></form:label>
 			<form:input path="disc" type="text" class="form-control"
 						required="required" />
 			<form:errors path="disc" cssClass="text-warning" />
 		</fieldset>
 
 		<fieldset class="form-group">
-			<form:label path="add_inf" style="color:white">Дополнительная информация</form:label>
+			<form:label path="add_inf" style="color:black"><spring:message code="lang.add_info" text="" /></form:label>
 			<form:input path="add_inf" type="text" class="form-control"
 						required="required" />
 			<form:errors path="add_inf" cssClass="text-warning" />
 		</fieldset>
 
 		<fieldset class="form-group">
-			<form:label path="address" style="color:white">Адрес</form:label>
+			<form:label path="address" style="color:black"><spring:message code="lang.address" text="" /></form:label>
 			<form:input path="address" type="text" class="form-control"
 						required="required" />
 			<form:errors path="address" cssClass="text-warning" />
 		</fieldset>
 
 		<fieldset class="form-group">
-			<form:label path="phoneNumber" style="color:white">Номер телефона</form:label> <%--Description--%>
+			<form:label path="phoneNumber" style="color:black"><spring:message code="lang.phone" text="" /></form:label> <%--Description--%>
 			<form:input path="phoneNumber" type="number" class="form-control"
 						required="required" />
 			<form:errors path="phoneNumber" cssClass="text-warning" />
 		</fieldset>
 
 		<fieldset class="form-group">
-			<form:label path="prop" style="color:white">Реквизиты</form:label> <%--Description--%>
+			<form:label path="prop" style="color:black"><spring:message code="lang.req" text="" /></form:label> <%--Description--%>
 			<form:input path="prop" type="text" class="form-control"
 						required="required" />
 			<form:errors path="prop" cssClass="text-warning" />
 		</fieldset>
 
-		<button class="glow-on-hover" type="submit">Добавить</button>
-		<a type="button" class="btn btn-primary glow-on-hover" href="/list-todos">Назад</a>
+		<button class="glow-on-hover" type="submit"><spring:message code="lang.add" text="" /></button>
+		<a type="button" class="btn btn-primary glow-on-hover" href="/list-todos"><spring:message code="lang.back" text="" /></a>
 	</form:form>
 </div>
 <%@ include file="common/footer.jspf" %>

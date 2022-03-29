@@ -1,5 +1,6 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <style>
 	header img {
 		height: 35px;
@@ -7,7 +8,7 @@
 	}
 	body {
 		height: 125vh;
-		background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+		background-image: url('https://www.vfnlaw.com/wp-content/uploads/2016/02/corporate-buildings-white-1.jpg');
 		background-size: cover;
 		font-family: sans-serif;
 		margin-top: 80px;
@@ -56,16 +57,34 @@
 		<img src="https://www.aristoteliansociety.org.uk/wp-content/uploads/2013/03/AS-Logo.jpg">
 		<nav>
 			<ul class="nav navbar-nav">
-				<li><a href="/list-todos">Клиенты</a></li>
+				<li><a href="/list-todos"><spring:message code="lang.clients" text="Клиенты"/></a></li>
 				<sec:authorize access="hasRole('ADMIN')">
-					<li ><a href="/new-user">Добавить пользователя</a></li>
-					<li ><a href="/user-credentials">Данные пользователей</a></li>
+					<li ><a href="/new-user"><spring:message code="lang.new_user" text="Добавить пользователя"/></a></li>
+					<li ><a href="/user-credentials"><spring:message code="lang.user_credentials" text="Данные пользователей"/></a></li>
 				</sec:authorize>
-				<li ><a href="/about">О компании</a></li>
+				<li ><a href="/about"><spring:message code="lang.about" text="О компании"/></a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/logout">Выход</a></li>
+				<li><a href="/logout"><spring:message code="lang.logout" text="Выход"/></a></li>
 			</ul>
+
+			<p style="width:5%; font-size:15px; position:absolute; left:89.5%; top:35%"><spring:message code="lang.lang" text="Язык" /></p>
+
+				<select id="locales" class="form-control form-control-sm" style="width:5%; position:absolute; left:92%; top:27%">
+					<option value=" "></option>
+					<option value="ru"><spring:message code="lang.main" text="Русский" /></option>
+					<option value="kz"><spring:message code="lang.second" text="Казахский" /></option>
+				</select>
+
 		</nav>
 	</header>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function (){
+			$("#locales").change(function(){
+				var selectedOption = $("#locales").val();
+				window.location.assign('?lang=' + selectedOption);
+			})
+		})
+	</script>
 </nav>

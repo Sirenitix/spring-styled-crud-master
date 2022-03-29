@@ -69,10 +69,10 @@
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Логин</th>
-            <th>Пароль</th>
-            <th>Роль</th>
-            <th>Статус аккаунта</th>
+            <th><spring:message code="lang.login" text="" /></th>
+            <th><spring:message code="lang.password" text="" /></th>
+            <th><spring:message code="lang.role" text="" /></th>
+            <th><spring:message code="lang.status" text="" /></th>
         </tr>
         </thead>
         <tbody class="radius" >
@@ -80,8 +80,8 @@
             <tr>
                 <td>${user_info.login}</td>
                 <td>${fn:substring(user_info.password, 6, -1)}</td>
-                <td>${user_info.role == "ROLE_ADMIN" ? "Админ" : "Пользователь"}</td>
-                <td>${user_info.enabled == "true" ? "Активен" : "Отключен"}</td>
+                <td>${user_info.role == "ROLE_ADMIN" ? "Admin" : "User"}</td>
+                <td>${user_info.enabled == "true" ? "+" : "-"}</td>
             </tr>
         </c:forEach>
 

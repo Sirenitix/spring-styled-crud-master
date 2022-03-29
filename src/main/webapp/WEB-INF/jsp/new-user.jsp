@@ -111,21 +111,21 @@
 
 
         <fieldset class="form-group">
-            <form:label path="login" style="color:white;">Логин</form:label>
+            <form:label path="login" style="color:black;"><spring:message code="lang.login" text="" /></form:label>
             <form:input path="login"  type="text" class="form-control"
                         required="required" />
             <form:errors path="login" cssClass="text-warning" />
         </fieldset>
 
         <fieldset class="form-group">
-            <form:label path="password" style="color:white;">Пароль</form:label>
+            <form:label path="password" style="color:black;"><spring:message code="lang.password" text="" /></form:label>
             <form:input id="pass" path="password" type="text" class="form-control"
                         required="required" />
             <form:errors path="password" cssClass="text-warning" />
         </fieldset>
 
         <fieldset class="form-group">
-            <form:label path="passwordChecker" style="color:white">Введите пароль еще раз для проверки</form:label>
+            <form:label path="passwordChecker" style="color:black"><spring:message code="lang.re_enter_password" text="" /></form:label>
             <form:input id="pass1" path="passwordChecker" type="text" class="form-control"
                         required="required" />
             <form:errors path="passwordChecker" cssClass="text-warning" />
@@ -134,7 +134,7 @@
 
 <%--        <button type="submit" class="btn btn-success"></button>--%>
 
-        <button class="glow-on-hover" type="submit">Добавить</button>
+        <button class="glow-on-hover" type="submit"><spring:message code="lang.add" text="" /></button>
         <br>
         <c:if test="${not empty error}">
             <f:verbatim><br /></f:verbatim>
