@@ -10,7 +10,7 @@ public class database {
     public static Connection ct = null;
     public static ResultSet rs;
     public static String url = "jdbc:mysql://localhost:3306/clients";
-    public static String user1 = "admin", pass = "12345678";
+    public static String user1 = "root", pass = "root";
     public static String driver = "com.mysql.jdbc.Driver";
 
 
