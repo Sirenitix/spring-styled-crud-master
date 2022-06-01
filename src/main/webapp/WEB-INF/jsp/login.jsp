@@ -391,19 +391,19 @@
         <!-- Remind Passowrd -->
 
         <div class="arrow" style="top: 100%" onclick="function myNew() {
-            location.replace('http://172.105.130.102:8000/');
+            location.replace('https://asia-stroi.herokuapp.com/');
         }
         myNew()">
             <span onclick="function myNew() {
-            location.replace('http://172.105.130.102:8000/');
+            location.replace('https://asia-stroi.herokuapp.com/');
         }
         myNew()"></span>
             <span onclick="function myNew() {
-            location.replace('http://172.105.130.102:8000/');
+            location.replace('https://asia-stroi.herokuapp.com/');
         }
         myNew()"></span>
             <span onclick="function myNew() {
-            location.replace('http://172.105.130.102:8000/');
+            location.replace('https://asia-stroi.herokuapp.com/');
         }
         myNew()"></span>
 
