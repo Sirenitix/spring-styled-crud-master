@@ -9,8 +9,8 @@ import java.util.List;
 public class database {
     public static Connection ct = null;
     public static ResultSet rs;
-    public static String url = "jdbc:mysql://localhost:3306/clients";
-    public static String user1 = "admin", pass = "12345678";
+    public static String url = "jdbc:mysql://ilzyz0heng1bygi8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/bscqtti68if8ojdc";
+    public static String user1 = "f0gjoldy6vl4u5pb", pass = "n8rti1hje5tdnnzw";
     public static String driver = "com.mysql.jdbc.Driver";
 
 
